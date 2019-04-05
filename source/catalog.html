@@ -110,13 +110,34 @@
 
     <section class="add-to-cart modal">
       <h2 class="add-to-cart__header">Добавить  в корзину</h2>
-      <p class="add-to-cart__text">Выберите размер:</p>
-      <button class="add-to-cart__small-btn purchase__small-btn--active" type="button">S</button>
-      <button class="add-to-cart__small-btn" type="button">M</button>
-      <button class="add-to-cart__small-btn" type="button">L</button>
-      <p class="add-to-cart__paragraph">
-        <button class="add-to-cart__big-btn button" type="button">Добавить</button>
-      </p>
+      <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="cart-form__fieldset">
+          <legend class="cart-form__legend">Выберите размер:</legend>
+          <ul class="cart-form__list">
+            <li class="cart-form__option">
+              <label class="cart-form__item">
+                <input class="visually-hidden" type="checkbox" name="size-s" id="size-s">
+                S
+              </label>
+            </li>
+            <li class="cart-form__option">
+              <label class="cart-form__item">
+                <input class="visually-hidden" type="checkbox" name="size-m" id="size-m">
+                M
+              </label>
+            </li>
+            <li class="cart-form__option">
+              <label class="cart-form__item">
+                <input class="visually-hidden" type="checkbox" name="size-l" id="size-l">
+                L
+              </label>
+            </li>
+          </ul>
+          <p class="cart-form__paragraph">
+            <button class="cart-form__send button">Добавить</button>
+          </p>
+        </fieldset>
+      </form>
     </section>
 
     <footer class="page-footer">
