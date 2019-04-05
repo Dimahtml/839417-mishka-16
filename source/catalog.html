@@ -35,48 +35,109 @@
       <section class="catalog">
         <ul class="catalog__list">
           <li class="catalog__item">
-            <img class="catalog__image" src="#" alt="Вязаный зайчик" width="260" height="295">
+            <a href="#">
+              <img class="catalog__image" src="#" alt="Вязаный зайчик" width="260" height="295">
+            </a>
             <div class="catalog__inner--top">
-              <h2 class="catalog__product-name">Зайчик-попрыгайчик</h2>
+              <a class="catalog__product-link" href="#">
+                <h2 class="catalog__product-name">Зайчик-попрыгайчик</h2>
+              </a>
               <p class="catalog__product-features">Рост 30 см, вес 200 г</p>
             </div>
             <div class="catalog__inner--bottom">
               <b class="catalog__price">1 200 руб.</b>
+              <a class="catalog__modal-link" href="#">
+                <span class="catalog__cart-icon"></span>
+              </a>
             </div>
           </li>
           <li class="catalog__item">
-            <img class="catalog__image" src="#" alt="Вязаная корзинка" width="260" height="295">
+            <a href="#">
+              <img class="catalog__image" src="#" alt="Вязаная корзинка" width="260" height="295">
+            </a>
             <div class="catalog__inner--top">
-              <h2 class="catalog__product-name">Корзинка для белья</h2>
+              <a class="catalog__product-link" href="#">
+                <h2 class="catalog__product-name">Корзинка для белья</h2>
+              </a>
               <p class="catalog__product-features">Диаметр 15 см, высота 10 см</p>
             </div>
             <div class="catalog__inner--bottom">
               <b class="catalog__price">690 руб.</b>
+              <a class="catalog__modal-link" href="#">
+                <span class="catalog__cart-icon"></span>
+              </a>
             </div>
           </li>
           <li class="catalog__item">
-            <img class="catalog__image" src="#" alt="Большая вязаная корзинка" width="260" height="295">
+            <a href="#">
+              <img class="catalog__image" src="#" alt="Большая вязаная корзинка" width="260" height="295">
+            </a>
             <div class="catalog__inner--top">
-              <h2 class="catalog__product-name">Большая корзинка для игрушек</h2>
+              <a class="catalog__product-link" href="#">
+                <h2 class="catalog__product-name">Большая корзинка для игрушек</h2>
+              </a>
               <p class="catalog__product-features">Диаметр 30 см, высота 30 см</p>
             </div>
             <div class="catalog__inner--bottom">
               <b class="catalog__price">1 500 руб.</b>
+              <a class="catalog__modal-link" href="#">
+                <span class="catalog__cart-icon"></span>
+              </a>
             </div>
           </li>
         </ul>
       </section>
+
+      <section class="production">
+        <div class="production__wrapper">
+          <div class="production__inner production__inner--header">
+            <h2 class="production__header">Процесс производства</h2>
+          </div>
+          <div class="production__inner production__inner--video">
+            <video src="#" width="260" height="150"></video>
+          </div>
+          <div class="production__inner production__inner--text">
+            <p class="production__paragraph">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+          </div>
+          <div class="production__inner production__inner--button">
+            <a class="production__link button" href="#">Сделать заказ</a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <section class="purchase modal">
-      <h2 class="purchase__header">Добавить  в корзину</h2>
-      <p class="purchase__text">Выберите размер:</p>
-      <button class="purchase__small-btn purchase__small-btn--active" type="button">S</button>
-      <button class="purchase__small-btn" type="button">M</button>
-      <button class="purchase__small-btn" type="button">L</button>
-      <p class="purchase__paragraph">
-        <button class="purchase__big-btn button" type="button">Добавить</button>
-      </p>
+    <section class="add-to-cart modal">
+      <h2 class="add-to-cart__header">Добавить  в корзину</h2>
+      <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="cart-form__fieldset">
+          <legend class="cart-form__legend">Выберите размер:</legend>
+          <ul class="cart-form__list">
+            <li class="cart-form__option">
+              <label class="cart-form__item">
+                <input class="visually-hidden" type="checkbox" name="size-s" id="size-s">
+                S
+              </label>
+            </li>
+            <li class="cart-form__option">
+              <label class="cart-form__item">
+                <input class="visually-hidden" type="checkbox" name="size-m" id="size-m">
+                M
+              </label>
+            </li>
+            <li class="cart-form__option">
+              <label class="cart-form__item">
+                <input class="visually-hidden" type="checkbox" name="size-l" id="size-l">
+                L
+              </label>
+            </li>
+          </ul>
+          <p class="cart-form__paragraph">
+            <button class="cart-form__send button">Добавить</button>
+          </p>
+        </fieldset>
+      </form>
     </section>
 
     <footer class="page-footer">
