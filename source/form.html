@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,18 +14,18 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a>Вязание на заказ</a>
+            <a class="main-nav__link">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--search">
-            <a href="#">Поиск по сайту</a>
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
           </li>
           <li class="main-nav__item main-nav__item--basket">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -42,13 +43,13 @@
           <fieldset class="purchase-form__fieldset">
             <legend class="purchase-form__lead"><b>Тип</b></legend>
             <ul class="purchase-form__list">
-              <li class="purchase-form__item radio visually-hidden">
+              <li class="purchase-form__item radio">
                 <label>
                   <input type="radio" name="type" id="accessory" checked>
                   Аксессуар для  интерьера
                 </label>
               </li>
-              <li class="purchase-form__item radio visually-hidden">
+              <li class="purchase-form__item radio">
                 <label>
                   <input type="radio" name="type" id="toy">
                   Детская игрушка

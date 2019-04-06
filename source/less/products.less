@@ -1,0 +1,39 @@
+.products {
+  .pure-list();
+}
+
+.products__item {
+  padding: 0;
+}
+
+.products__link {
+  display: block;
+
+  padding: 30px;
+  padding-right: 120px;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  font-family: "Opens Sans", "Arial", sans-serif;
+  color: #ffffff;
+
+  background-color: @design-color;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--bottom-right {
+    background-color: #56c3b2;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+  }
+}
