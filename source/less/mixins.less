@@ -3,22 +3,26 @@
   font-size: 25px;
   line-height: 30px;
   font-family: @font-family;
-  color: #000000;
+  color: @header-color;
 }
 
-.text-style-regular() {
+.text-style-regular(@font-size:15px; @line-height:24px) {
   font-weight: regular;
+  font-size: @font-size;
+  line-height: @line-height;
   font-family: @font-family;
   color: @text-color;
 }
 
-.text-style-bold() {
+.text-style-bold(@font-size:17px; @line-height:24px) {
   font-weight: bold;
+  font-size: @font-size;
+  line-height: @line-height;
   font-family: @font-family;
   color: @header-color;
 }
 
-.text-style-button() {
+.text-style-button(@font-size:18px; @line-height:20px) {
   font-weight: bold;
   font-family: @font-family;
   color: @text-color;
