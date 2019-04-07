@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,18 +14,18 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a>Каталог товаров</a>
+            <a class="main-nav__link">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Вязание на заказ</a>
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--search">
-            <a href="#">Поиск по сайту</a>
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
           </li>
           <li class="main-nav__item main-nav__item--basket">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -115,22 +116,16 @@
           <legend class="cart-form__legend">Выберите размер:</legend>
           <ul class="cart-form__list">
             <li class="cart-form__option">
-              <label class="cart-form__item">
-                <input class="visually-hidden" type="checkbox" name="size-s" id="size-s">
-                S
-              </label>
+              <input class="size visually-hidden" type="checkbox" name="size-s" id="size-s">
+              <label class="cart-form__item" for="size-s">S</label>
             </li>
             <li class="cart-form__option">
-              <label class="cart-form__item">
-                <input class="visually-hidden" type="checkbox" name="size-m" id="size-m">
-                M
-              </label>
+              <input class="size visually-hidden" type="checkbox" name="size-m" id="size-m">
+              <label class="cart-form__item" for="size-m">M</label>
             </li>
             <li class="cart-form__option">
-              <label class="cart-form__item">
-                <input class="visually-hidden" type="checkbox" name="size-l" id="size-l">
-                L
-              </label>
+              <input class="size visually-hidden" type="checkbox" name="size-l" id="size-l">
+              <label class="cart-form__item" for="size-l">L</label>
             </li>
           </ul>
           <p class="cart-form__paragraph">
