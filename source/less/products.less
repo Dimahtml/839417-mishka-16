@@ -15,14 +15,15 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  font-family: "Opens Sans", "Arial", sans-serif;
+  font-family: @font-family;
   color: #ffffff;
 
   background-color: @design-color;
   text-decoration: none;
 
-  &:hover {
-    background-color: #59d5bc;
+  &:hover,
+  &:focus {
+    background-color: darken(saturate(@design-color, 5.1%), 1.2%);
   }
 
   &:active {
@@ -30,10 +31,11 @@
   }
 
   &--bottom-right {
-    background-color: #56c3b2;
+    background-color: @design-color-dark;
 
-    &:hover {
-      background-color: #46c1ae;
+    &:hover,
+    &:focus {
+      background-color: darken(saturate(@design-color-dark, 2.2%), 3.5%);;
     }
   }
 }
