@@ -1,4 +1,8 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
   .text-style-bold(17px; 24px);
 }
 
@@ -7,8 +11,18 @@
 }
 
 .main-nav__item {
+  padding: 26px 0;
   .text-style-bold(17px; 24px);
-  border-bottom: 2px solid #ececec;
+  text-align: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__item--logo {
+  border-top: 1px solid #ececec;
+}
+
+.main-nav__item--slogan {
+  display: none;
 }
 
 .main-nav__link {
@@ -18,11 +32,99 @@
   font-family: "Opens Sans", "Arial", sans-serif;
   text-align: center;
   color: @link-color;
-
   text-decoration: none;
 
   &:hover,
   &:focus {
     color: @link-hover-color;
   }
+}
+
+// *************   TABLET   *************
+
+@media(min-width: @tablet-width) {
+  .main-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+
+  .main-nav__item--logo {
+    order: 0;
+    width: 370px;
+  }
+
+  .main-nav__item--slogan {
+    display: block;
+    order: 3;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__list--site {
+    order: 2;
+    margin-left: 50px;
+    width: 398px;
+  }
+
+  .main-nav__list--user {
+    order: 1;
+  }
+
+  .main-nav__item--catalog,
+  .main-nav__item--purchase {
+    padding-right: 35px;
+    border: none;
+  }
+
+  .main-nav__item--search {
+    width: 82px;
+    border: 1px solid #ececec;
+  }
+
+  .main-nav__item--basket {
+    width: 314px;
+  }
+
+  .main-nav__item--slogan {
+    margin: 0;
+    margin-right: 50px;
+    margin-left: auto;
+    .text-style-regular(15px; 24px);
+    border: none;
+  }
+}
+
+// *************   DESKTOP   *************
+
+@media(min-width: @desktop-width) {
+  .main-nav {
+    width: 1150px;
+  }
+
+  .main-nav__list--site {
+    order: 0;
+    margin-left: 0px;
+  }
+
+  .main-nav__item--logo {
+    order: 1;
+    width: 149px;
+  }
+
+  .main-nav__list--user {
+    order: 2;
+  }
+
+  .main-nav__item--catalog {
+    border-right: 1px solid #ececec;
+  }
+
+  .main-nav__item--catalog,
+  .main-nav__item--purchase {
+    border-bottom: 1px solid #ececec;
+  }
+
 }
