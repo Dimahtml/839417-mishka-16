@@ -1,14 +1,61 @@
 .page-footer {
-  padding: 0 30px;
   background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 260px;
 }
 
 .page-footer__social {
   padding: 25px 0;
-
   border-bottom: 2px solid #e5e5e5;
+  text-align: center;
 }
 
 .page-footer__copyright {
   padding: 22px 0;
+  text-align: center;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+// *************   TABLET   *************
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 50px;
+    width: 668px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 182px;
+  }
+
+  .page-footer__social {
+    width: 141px;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .page-footer__copyright {
+    width: 182px;
+
+    text-align: right;
+  }
+}
+
+// *************   DESKTOP   *************
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: 1050px;
+  }
 }
