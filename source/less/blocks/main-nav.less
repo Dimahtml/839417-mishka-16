@@ -42,7 +42,7 @@
 
 // *************   TABLET   *************
 
-@media(min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
   .main-nav {
     flex-direction: row;
     flex-wrap: wrap;
@@ -56,7 +56,15 @@
 
   .main-nav__item--slogan {
     display: block;
+
     order: 3;
+    margin: 0;
+    margin-right: 50px;
+    margin-left: auto;
+
+    .text-style-regular(15px; 24px);
+
+    border: none;
   }
 
   .main-nav__list {
@@ -87,26 +95,18 @@
   .main-nav__item--basket {
     width: 314px;
   }
-
-  .main-nav__item--slogan {
-    margin: 0;
-    margin-right: 50px;
-    margin-left: auto;
-    .text-style-regular(15px; 24px);
-    border: none;
-  }
 }
 
 // *************   DESKTOP   *************
 
-@media(min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
   .main-nav {
     width: 1150px;
   }
 
   .main-nav__list--site {
     order: 0;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .main-nav__item--logo {
@@ -126,5 +126,4 @@
   .main-nav__item--purchase {
     border-bottom: 1px solid #ececec;
   }
-
 }
